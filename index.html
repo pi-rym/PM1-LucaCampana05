@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Presentacion</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -13,11 +13,18 @@
 
     <header>
 
+        <nav>
+            <ul class="menu">
+                <li><a href="#section1" class="linkMenu">Sobre Mi</a></li>
+                <li><a href="#section2" class="linkMenu">Mis Tecnologías</a></li>
+                <li><a href="#section3" class="linkMenu">Mis actividades</a></li>
+            </ul>
+        </nav>
         <article>
 
             <div>
 
-                <h1 class="titulo">Bienvenido a mi página</h1> 
+                <h1 class="bienvenida">Bienvenido a mi página</h1>
             </div>
 
         </article>
@@ -28,75 +35,95 @@
 
                 <div>
 
-                    
-                    
-                    <h2 id="sobreMi">Sobre mí</h2>
-                    
+                    <a name="section1"></a>
+
+                    <h2 id="sobreMi">Sobre mí:</h2>
+
                     <div id="fotoPrincipal">
 
-                    <img src="imag/fotoprincipal.jpeg" alt="Mi foto">
+                        <img src="imag/fotoprincipal.jpeg" alt="Mi foto">
 
-                    
 
-                    <p>
-                        Hola, soy Luca Campana, tengo 26 años y soy de Mendoza Argentina. Soy un estudiante de
-                        programación
-                        en
-                        Henry. Después de pasar por varias carreras como administración de empresas, contabilidad,
-                        abogacía
-                        y
-                        escribanía, me incliné por la programación ya que es algo que me llamó la atención desde muy
-                        chico.
-                    </p>
+
+                        <p>
+                            Hola, soy Luca Campana, tengo 26 años y soy de Mendoza Argentina. Soy un estudiante de
+                            programación
+                            en
+                            Henry.
+                        </p>
 
                     </div>
 
                 </div>
 
             </article>
-        
+
         </section>
 
     </header>
 
     <main>
 
-        <section>
+        <a name="section2"></a>
 
-            <div>
+        <section class="grid-container">
+
+            <div class="section2">
 
                 <h3 id="tecnologias">Mis tecnologias favoritas son:</h3>
-    
+
+                <div class="cards">
+
+                    <img src="imag/html imag.png" alt="HTML">
+
+                </div>
+
+                <div class="cards">
+
+                    <img src="imag/js imag.png" alt="JS">
+
+                </div>
+
+                <div>
+
+                    <img src="imag/css imag.png" alt="CSS" id="css">
+
+                </div>
+
             </div>
-        
+
+            <a name="section3"></a>
+
+            <div class="section3">
+
+                <form action="" class="agregarAct" id="MisActividadesFavoritas">
+
+                    <h2>Mis Actividades Favoritas</h2>
+
+                    <input id="titulo" type="text" name="titulo" placeholder="Escribe el nombre de la actividad">
+
+                    <textarea id="descripcion" name="descripcion" placeholder="Escribe una Descripción"></textarea>
+
+                    <input id="urlimg" type="url" name="urlimg" placeholder="Escribe la direccion URL de la imagen de la actividad.">
+
+                    <button id="botonActividad" type="submit">Agregar actividad</button>
+
+                </form>
+
+            </div>
+            
         </section>
-
-        <section id="titulos2" class="cards">
-    
-            <div class="cards">
-               <img src="imag/html imag.png" alt="HTML">
-             </div>
-
-             <div class="cards">
-                <img src="imag/js imag.png" alt="JS">
-             </div>
-
-             <div class="cardscss">
-                <img src="imag/css imag.png" alt="CSS" id="css">
-             </div>
-        </section>
+        <h2 class="titulo">Actividades Agregadas</h2>
+            <div id="contaner_activities">
+                <!--<article class="cards">
+                    <h3>Ejemplo Actividad</h3>
+                    <img src="./assets/img/dummy-image-square.jpg" alt="logo HTML">
+                    <p>Ejemplo breve escripcion de la actividad</p>
+                </article> -->
+            </div>
     </main>
-
-    <footer>
-
-        este es el footer de mi pagina ahora voy a poner unos enlaces
-
-        <a href="contacto.html">Formulario de contacto</a>
-
-    </footer>
-
-    <label for=""></label>
-
+    
+        <script src="./scripts/index.js"></script>
 </body>
 
 </html>
